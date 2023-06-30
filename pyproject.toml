@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "0.0.1"
+name = "bronzivka"
+description = "My Python packages sphinx documentation theme"
+authors = [{ name = "Lionel Garcia" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "sphinx",
+    "docutils",
+    "jupyterlab",
+    "myst-parser",
+    "sphinx-book-theme>=1.0.0",
+    "myst-nb",
+    "sphinx-copybutton",
+    "sphinx-design",
+    "toml",
+    "ipywidgets",
+]
+[project.entry-points."sphinx.html_themes"]
+bronzivka = "bronzivka"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+bronzivka = ["theme/*"]
