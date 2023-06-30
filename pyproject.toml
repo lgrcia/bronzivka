@@ -5,7 +5,7 @@ description = "My Python packages sphinx documentation theme"
 authors = ["Lionel Garcia"]
 license = "MIT"
 readme = "readme.md"
-include = ["theme", "theme/**/*"]
+include = ["bronzivka/theme", "bronzivka/theme/**/*"]
 repository = "https://github.com/lgrcia/bronzivka"
 
 [tool.poetry.dependencies]
