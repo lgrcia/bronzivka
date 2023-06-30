@@ -1,7 +1,3 @@
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
 name = "bronzivka"
 version = "0.0.1"
@@ -25,7 +21,9 @@ sphinx-design = "*"
 toml = "*"
 ipywidgets = "*"
 
-[tool.poetry.plugins]
-
 [tool.poetry.plugins."sphinx.html_themes"]
 pobronzivka = "bronzivka"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
