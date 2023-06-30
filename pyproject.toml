@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bronzivka"
-version = "0.0.2"
+version = "0.0.3"
 description = "My Python packages sphinx documentation theme"
 authors = ["Lionel Garcia"]
 license = "MIT"
@@ -22,7 +22,7 @@ toml = "*"
 ipywidgets = "*"
 
 [tool.poetry.plugins."sphinx.html_themes"]
-pobronzivka = "bronzivka"
+bronzivka = "bronzivka"
 
 [build-system]
 requires = ["poetry-core"]
