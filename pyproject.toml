@@ -1,5 +1,5 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
@@ -10,6 +10,7 @@ authors = ["Lionel Garcia"]
 license = "MIT"
 readme = "readme.md"
 include = ["theme", "theme/**/*"]
+repository = "https://github.com/lgrcia/bronzivka"
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -25,5 +26,6 @@ toml = "*"
 ipywidgets = "*"
 
 [tool.poetry.plugins]
+
 [tool.poetry.plugins."sphinx.html_themes"]
-bronzivka = "bronzivka"
+pobronzivka = "bronzivka"
